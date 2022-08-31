@@ -29,7 +29,7 @@ class Department{
 
 class Menu{
     constructor(){
-        this.departments =[];
+        this.departments = [];
         this.selectedDepartment = null;
     }
     start(){
@@ -72,7 +72,7 @@ class Menu{
         1) Create New Employee
         2) Delete Existing Employee
         ---------------------------
-        ${departmentInfo}
+            ${departmentInfo}
         `);
     }
     
@@ -113,9 +113,9 @@ class Menu{
     }
 
     deleteDepartment(){
-        let index = prompt("Enter the Department you wish to Delete:");
+        let index = prompt("Enter the Index of the Department you wish to Delete:");
         if(index > -1 && index < this.departments.length){
-            this.departments.splice[index,1];
+            this.departments.splice(index, 1);
         }
     }
 
